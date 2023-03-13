@@ -34,7 +34,8 @@ This query can be useful to review the overall data and familiarize oneself with
  
  
  Overall, these queries can be used to standardize date formats in the dataset, ensuring consistency and enabling efficient analysis.
- 
+
+----------------------------------------------------------------------------------
  
 ```sql
  --Populate Property Address Data
@@ -74,6 +75,8 @@ WHERE a.PropertyAddress IS NULL
  
 Overall, these queries can be useful for identifying and correcting incomplete or missing address data in the dataset, 
 ensuring completeness and accuracy in the analysis.
+
+----------------------------------------------------------------------------------
 
 ```sql
 --Breaking Out Address into individual Columns (Adress, City, State)
@@ -148,6 +151,8 @@ The reason for splitting the address column into separate columns is to make the
 This allows for easier filtering and sorting by address, city, and state. Additionally, splitting the OwnerAddress column allows 
 for analysis of owner information at a more granular level.
 
+----------------------------------------------------------------------------------
+
 ```sql
 --Change Y and N to YES and NO in "Sold as Vacant" Field
 
@@ -179,6 +184,8 @@ SET SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'Yes'
 The reason to use this for a project is to standardize the data in the "SoldAsVacant" field and make it more meaningful for analysis. 
 This would help in making more accurate decisions based on the data.
 
+----------------------------------------------------------------------------------
+
 ```sql
 --REMOVE duplicates 
 
@@ -206,6 +213,8 @@ and LegalReference. The order is based on the UniqueID column.
  
 Removing duplicates is an important step in data cleaning and analysis to ensure that each observation in the dataset is unique and accurate. 
 By removing duplicates, we can eliminate any potential errors or inconsistencies in the data that could affect the analysis and insights gained from it.
+
+----------------------------------------------------------------------------------
 
 ```sql
 --DELETE Unused Columns
