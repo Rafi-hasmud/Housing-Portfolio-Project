@@ -150,7 +150,7 @@ WHERE row_num > 1
 
 
 
---DELET Unused Columns
+--DELETE Unused Columns
 
 SELECT *
 FROM PortfolioProject.dbo.NashvilleHousing
